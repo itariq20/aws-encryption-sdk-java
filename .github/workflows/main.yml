@@ -53,4 +53,6 @@ jobs:
           --source "GITHUB_ACTIONS" \
           --timeout 600m \
           --create-repo-if-missing \
-          --skip-path "packages,*.dll,Assets/vendors"
+          --skip-path "packages" \
+          --skip-path "*.dll" \
+          --skip-path "Assets/vendors"
