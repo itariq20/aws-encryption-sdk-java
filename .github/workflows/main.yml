@@ -52,4 +52,5 @@ jobs:
           --branch "${{github.ref_name}}" \
           --source "GITHUB_ACTIONS" \
           --timeout 600m \
-          --create-repo-if-missing
+          --create-repo-if-missing \
+          --skip-path "packages,*.dll,Assets/vendors"
