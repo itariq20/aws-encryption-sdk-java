@@ -30,15 +30,34 @@ Resources:
     Condition: CreateDomain
     Properties:
       DomainName: !Ref DomainName
-
+      Tags:
+        - Key: yor_trace
+          Value: 48903474-3400-4087-83d2-c9067a090a4e
+        - Key: manny
+          Value: cepeda
+        - Key: git_org
+          Value: itariq20
   CIRepo:
     Type: AWS::CodeArtifact::Repository
     Properties:
       DomainName: !Ref DomainName
       RepositoryName: !Sub "${RepositoryName}-ci"
-
+      Tags:
+        - Key: yor_trace
+          Value: f3ef070f-09f7-4129-a0de-efa59eaca4db
+        - Key: manny
+          Value: cepeda
+        - Key: git_org
+          Value: itariq20
   StagingRepo:
     Type: AWS::CodeArtifact::Repository
     Properties:
       DomainName: !Ref DomainName
       RepositoryName: !Sub "${RepositoryName}-staging"
+      Tags:
+        - Key: git_org
+          Value: itariq20
+        - Key: yor_trace
+          Value: f2f9014f-86d6-445c-9e19-8c5d53385616
+        - Key: manny
+          Value: cepeda
