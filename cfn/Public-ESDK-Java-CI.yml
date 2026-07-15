@@ -65,3 +65,10 @@ Resources:
             }
           ]
         }
+      Tags:
+        - Key: yor_trace
+          Value: 69e02ea1-39cf-4ba5-9a6e-9d511fde5957
+        - Key: manny
+          Value: cepeda
+        - Key: git_org
+          Value: itariq20
